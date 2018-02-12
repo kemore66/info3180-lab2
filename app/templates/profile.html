@@ -1,0 +1,32 @@
+<!DOCTYPE HYML>
+
+{% extends "base.html" %}
+
+
+{% block main %}
+
+<div class="profile-info">
+    <img src={{ url_for('static', filename="beautful.jpeg") }}></img>
+    <h1>kemore trowers</h1>
+    <h2>@ktrowers</h2>
+    <h2>Kingston, Jamaica</h2>
+    <h2>Date Joined: {{full_time}}</h2>
+</div>
+
+<div class="data"></div>
+<table align="center" cellspacing="10">
+  <tr>
+    <td>7</td>
+    <td>100</td>
+    <td>250</td>
+  </tr>
+  <tr>
+    <td>Posts</td>
+    <td>Following</td>
+    <td>Followers</td>
+  </tr>
+</table>
+</div>
+
+<div class="button">Follow</div>
+{% endblock %}
